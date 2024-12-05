@@ -1,0 +1,323 @@
+/***** GLOBAL STYLES *****/
+body {
+    font-family: 'Georgia', serif;
+    background-color: #ffffff;
+    color: #242424;
+}
+
+.container {
+    padding: 25px 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0; /* Space around the line */
+}
+
+/***** NAVBAR *****/
+.navbar {
+    background-color: #003366;
+    border-radius: 0;
+    line-height: 60px;
+    overflow: hidden; /* Prevent resizing */
+    display: flex;
+    align-items: center; /* Centers content vertically */
+}
+
+.navbar-default .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    color: white !important;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ebd122;
+    text-decoration: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    display: block !important;
+    color: #fff;
+    background-color: #003366;
+    border: 1px solid;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.navbar-toggler:hover {
+    background-color: #ebd122;
+    color: #242424;
+    border-color: #fff;
+}
+
+.navbar-logo {
+    height: 90px;
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Align menu items to the right on larger screens */
+@media (min-width: 992px) {
+    .navbar-nav {
+        margin-left: auto;
+    }
+    .navbar-toggler {
+        display: none !important;
+    }
+}
+
+/***** JUMBOTRON *****/
+.jumbotron {
+    position: relative;
+    height: auto;
+    padding: 3%;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Roboto Slab', serif;
+}
+
+.jumbotron::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/Madison.png");
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px);
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 2;
+}
+
+.jumbotron h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #FFF;
+}
+
+.jumbotron p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.jumbotron-logo {
+    display: block;
+    margin: 20px auto;
+    height: 175px;
+    width: auto;
+}
+
+/***** CARD *****/
+.card {
+    background-color: #fff;
+    border-color: #cccccc;
+    border-width: 1px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    border-color: #ebd122;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/***** BUTTONS *****/
+.btn-primary {
+    background-color: #003366;
+    border-color: #003366;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #002244;
+    border-color: #002244;
+}
+
+/***** FORMS *****/
+.form-col, .form-group {
+    margin-bottom: 15px;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding: 15px 75px;
+}
+
+.btn-xl {
+    font-size: 15px;
+    padding: 15px 75px;
+}
+
+/***** FOOTER *****/
+footer {
+    padding: 25px 0;
+    text-align: center;
+    background-color: #003366;
+}
+
+footer span.copyright, footer ul.quicklinks {
+    font-size: 90%;
+    line-height: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer ul.social-buttons {
+    margin-bottom: 0;
+    line-height: 50px;
+}
+
+footer ul.social-buttons li a {
+    font-size: 18px;
+    line-height: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s;
+    color: white;
+    border-radius: 100%;
+    background-color: #212529;
+}
+
+footer ul.social-buttons li a:hover {
+    background-color: #ebd122;
+}
+
+/***** GALLERY *****/
+.gallery-container {
+    padding: 20px 0;
+}
+
+.photo-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.photo-card:hover {
+    transform: scale(1.03);
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+.photo-description {
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/***** MAPS SOCIAL MEDIA ICONS *****/
+.maps-social-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.maps-social-buttons li a {
+    font-size: 3rem;
+    color: #003366;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.maps-social-buttons li a:hover {
+    color: #ebd122;
+}
+
+/****** "FEATURED PROJECTS" ON HOME PAGE*****/
+.featured-title {
+    font-family: 'Roboto Slab', serif; /* Match your website's font */
+    font-size: 2.2rem; /* Increase the font size slightly */
+    color: #003366; /* Consistent blue color */
+    font-weight: bold; /* Keep it prominent */
+    margin-bottom: 10px; /* Reduce spacing below the title */
+    margin-top: 20px; /* Optional: Adjust spacing above the title */
+}
+
+.featured-title-container {
+    padding: 10px 0; /* Reduce vertical padding */
+}
+
+
+
+/* Headshot Styling */
+#headshot {
+    max-width: 200px; /* Limit the width of the image */
+    height: auto; /* Maintain the aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 50%; /* Optional: Make the image circular */
+}
+
+/* Ensure the image scales properly on all screen sizes */
+.birding-tour-image {
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Prevent the image from exceeding the screen width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 90vh; /* Limit height to 90% of the viewport */
+    display: block; /* Remove any inline spacing issues */
+    margin: 0 auto; /* Center the image */
+}
+
+.card-container{
+    margin-bottom: 15px;
+}
