@@ -98,13 +98,15 @@ hr {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../assets/Madison.png");
+    background-image: url("../assets/cobble.png");
     background-size: cover;
-    background-position: center;
-    filter: blur(1px);
-    opacity: 0.8;
+    background-position: center top; /* Shift image upwards */
+    background-position: center 55%; /* Shift 10% down from the top */
+    filter: blur(0.5px);
+    opacity: 1;
     z-index: 1;
 }
+
 
 .jumbotron .container {
     position: relative;
