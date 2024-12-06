@@ -42,7 +42,7 @@ hr {
 .navbar-default .navbar-nav > li > a {
     font-family: 'Roboto Slab', serif;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     padding: 10px;
     text-decoration: none;
@@ -320,4 +320,49 @@ footer ul.social-buttons li a:hover {
 
 .card-container{
     margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .card {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-col {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .form-group textarea {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-brand {
+        font-size: 20px; /* Adjust as needed */
+    }
+    .navbar-logo {
+        height: 60px; /* Reduce logo size */
+    }
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav > li > a {
+        font-size: 12px; /* Smaller font size */
+        padding: 5px; /* Reduce padding */
+    }
+}
+@media (max-width: 767px) {
+    .btn-primary {
+        font-size: 12px; /* Reduce text size */
+        padding: 10px 20px; /* Reduce padding */
+    }
+}
+.col-md-4 {
+    margin-bottom: 15px; /* Add spacing below each column */
 }
