@@ -1,124 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Maps | Joseph Willman</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/0b26d5bb90.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maps | Joseph Willman</title>
+
+  <!-- Bootstrap & Styles -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/0b26d5bb90.js" crossorigin="anonymous"></script>
+
+  <style>
+ 
+
+    /* === Card Grid === */
+    #projectGrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .map-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .map-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    .map-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .map-card-body {
+      flex-grow: 1;
+      padding: 1.25rem;
+      text-align: center;
+    }
+
+    .map-card-body h5 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+      color: #000;
+    }
+
+    .map-card-body p {
+      font-size: 0.9rem;
+      color: #444;
+      margin-bottom: 1rem;
+    }
+
+    .map-card-footer {
+      text-align: center;
+      padding: 0.75rem 1rem 1.25rem;
+    }
+
+    .map-card-footer a {
+      background-color: #002D62;
+      color: white;
+      font-weight: 500;
+      border-radius: 5px;
+      padding: 0.5rem 1.5rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.2s ease;
+    }
+
+    .map-card-footer a:hover {
+      background-color: #01499b;
+    }
+
+    footer p, footer img {
+      margin: 0 auto;
+      display: block;
+    }
+  </style>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-default">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/logo.png" alt="Logo" class="navbar-logo"> Joseph Willman
-            </a>
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="Maps.html">Maps</a></li>
-                    <li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Resume.html">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Jumbotron -->
-    <div class="jumbotron">
-        <div class="container">
-            <h2>Maps</h2>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-default">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logo.png" alt="Logo" class="navbar-logo"> Joseph Willman
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Maps.html">Maps</a></li>
+          <li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
+          <li class="nav-item"><a class="nav-link" href="Resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <!-- Map Cards Section -->
-    <div class="container">
-        <div class="row" id="mapCards">
-            <!-- Cards will be dynamically added here -->
-        </div>
+  <!-- Hero Banner -->
+  <div class="jumbotron">
+    <h1>Maps & Cartography Projects</h1>
+  </div>
+
+  <!-- Dynamic Cards Grid -->
+  <div class="container pb-5">
+    <div id="projectGrid"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer mt-5">
+    <div class="container text-center">
+      <ul class="list-inline social-buttons mb-2">
+        <li class="list-inline-item"><a href="mailto:jgwillman@wisc.edu" target="_blank"><i class="fa fa-envelope"></i></a></li>
+        <li class="list-inline-item"><a href="https://github.com/JoeyWillman" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li class="list-inline-item"><a href="https://x.com/WillmanCarto" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.linkedin.com/in/joseph-willman-56696a206/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.instagram.com/joeywillman/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+
+      <p class="text-muted" style="margin-top:0px">
+        Cover photo by Nancie Battaglia, courtesy of Adirondack Land Trust
+        <span class="line-break"></span>
+      </p>
+      <p class="text-muted mb-1">Copyright © 2024 Joseph Willman. All rights reserved.</p>
+      <img src="assets/logo.png" alt="logo" height="75px">
     </div>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <ul class="list-inline social-buttons">
-                        <li class="list-inline-item"><a href="mailto:jgwillman@wisc.edu"><i class="fa fa-envelope"></i></a></li>
-                        <li class="list-inline-item"><a href="https://github.com/JoeyWillman"><i class="fab fa-github"></i></a></li>
-                        <li class="list-inline-item"><a href="https://x.com/WillmanCarto"><i class="fab fa-x-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/joseph-willman-56696a206/"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.instagram.com/joeywillman/"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                    <p class="text-muted" style="margin-top:0px">Copyright © 2024 Joseph Willman. <span
-                        class="line-break"></span>All
-                    rights reserved.
-                </p>
-                <p class="text-muted" style="margin-top:0px">Cover photo by Nancie Battaglia, courtesy of Adirondack Land Trust <span
-                    class="line-break"></span>
-            </p>
-                    <img src="assets/logo.png" alt="logo" height="75px" style="margin-top:10px">
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="lib/jquery-3.5.1.min.js"></script>
-    <script src="lib/bootstrap.min.js"></script>
-    <script>
-        // Card data for simplicity
-        const mapData = [
-            { title: "Ozaukee Interurban Bike Trail Birding Guide Interactive Map", image: "assets/interurbantrailguide.png", link: "portfolio/interurbantrail.html" },
-            { title: "Great Wisconsin Birding and Nature Trail Interactive Map", image: "assets/GWBNT-thumbnail.png", link: "portfolio/GWBNT.html" },
-            { title: "Wisconsin Accessible Birding Atlas", image: "assets/WABA-thumbnail.png", link: "portfolio/WABA.html" },
-            { title: "Coordinated Visualization Map", image: "assets/CoordinatedClimate.png", link: "portfolio/CoordinatedClimate.html" },
-            { title: "Green Space in Chicago Storymap", image: "assets/StoryMap-thumbnail.png", link: "portfolio/StoryMap.html" },
-            { title: "Medieval Basemap", image: "assets/ScrollMap-Thumbnail.png", link: "portfolio/ScrollMap.html" },
-            { title: "Lakeshore Nature Preserve Birding Tour", image: "assets/BirdingTour-Thumbnail.png", link: "portfolio/BirdingTour.html" },
-            { title: "Adirondack Park Size Comparison", image: "assets/AdriondacksVermontSizeComparisonMap.png", link: "portfolio/AdirondackSizeComp.html" },
-            { title: "Russian Occupation in Georgia", image: "assets/russian.png", link: "portfolio/RussianOccupation.html" },
-            { title: "Numbered vs Unnumbered Roads in Wisconsin", image: "assets/numberedroads.png", link: "portfolio/NumberedRoads.html" },
-            { title: "Vintage Wicker Park Map", image: "assets/WickerPark.png", link: "portfolio/WickerPark.html" },
-            { title: "Vintage Firetowers in New York", image: "assets/FireTower.png", link: "portfolio/Firetowers.html" },
-            { title: "Oil Leasing in ANWR", image: "assets/ANWR.png", link: "portfolio/ANWR.html" },
-            { title: "Watercolor Map of Penang", image: "assets/PenangWatercolor.png", link: "portfolio/Penang.html" },
-            { title: "Summiting Tahawus", image: "assets/Tahawus.png", link: "portfolio/Tahawus.html" },
-            { title: "Daylight Across America", image: "assets/TimeZones.png", link: "portfolio/Daylight.html" },
-            { title: "Knobstone Trail Thru-Hike", image: "assets/knobstone.png", link: "portfolio/Knobstone.html" },
-            { title: "The Great Range", image: "assets/GreatRange.png", link: "portfolio/GreatRange.html" },
-            { title: "American Climate Change Survey", image: "assets/ClimateChange.png", link: "portfolio/ClimateChange.html" },
-        ];
-
-        // Dynamically generate cards
-        const mapCardsContainer = document.getElementById('mapCards');
-        mapData.forEach(map => {
-            const card = `
-                <div class="card-container col-md-4">
-                    <div class="card">
-                        <a href="${map.link}">
-                            <img class="card-img-top" src="${map.image}" alt="${map.title}">
-                        </a>
-                        <div class="card-body">
-                            <h4 class="card-title">${map.title}</h4>
-                            <a href="${map.link}" class="btn btn-primary">See Detail</a>
-                        </div>
-                    </div>
-                </div>
-            `;
-            mapCardsContainer.innerHTML += card;
-        });
-    </script>
+  <!-- Scripts -->
+  <script src="lib/bootstrap.min.js"></script>
+  <script src="js/maps.js" defer></script>
 </body>
-
 </html>

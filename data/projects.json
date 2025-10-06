@@ -1,0 +1,162 @@
+[
+    {
+    "slug": "treasuresofoz",
+    "title": "Treasures of Oz",
+    "theme": "Atlas of Natual Areas in Ozaukee County",
+    "description": "This interactive site was created by Joseph Willman, a freelance cartographer and GIS specialist, as an independent project inspired by the Treasures of Oz website. While not affiliated with the Treasures of Oz, this project was developed to showcase the abundant natural areas of Ozaukee County.",
+    "link": "https://joeywillman.github.io/treasureofoz/index.html",
+    "image": "assets/treasuresofoz.png",
+    "featured": true
+  },
+  {
+    "slug": "mississippibluestrail",
+    "title": "Mississippi Blues Trail",
+    "theme": "Blues Trail Interactive Map",
+    "description": "This interactive site was created by Joseph Willman, a freelance cartographer and GIS specialist, as an independent project inspired by the Mississippi Blues Trail. While not affiliated with the Mississippi Blues Commission, this project was developed to showcase both the historical and cultural importance of the trail.",
+    "link": "https://joeywillman.github.io/MississipiBluesTrail/",
+    "image": "assets/bluestrail.png",
+    "featured": true
+  },
+  {
+    "slug": "birdingtour",
+    "title": "Lakeshore Nature Preserve Birding Tour",
+    "theme": "UW–Madison | Birding Map",
+    "description": "An interactive birding walking tour of the Lakeshore Nature Preserve on the UW–Madison campus, highlighting key stops and species with photos and narrative context.",
+    "link": "https://joeywillman.github.io/LakeshoreNaturePreserveBirdingTour/",
+    "image": "assets/BirdingTour-Page.png"
+  },
+  {
+    "slug": "climatechange",
+    "title": "American Climate Change Survey",
+    "theme": "#30DayMapChallenge – Humanitarian Data Exchange",
+    "description": "Choropleth map visualizing U.S. opinions on climate change using survey data and Python-generated pie charts within the map for regional comparisons.",
+    "image": "assets/ClimateChange.png"
+  },
+  {
+    "slug": "coordinatedclimate",
+    "title": "Coordinated Climate Visualization",
+    "theme": "D3 Coordinated Views",
+    "description": "A D3.js map and chart combination showing climate data in an interactive, linked-view design to explore spatial-temporal trends.",
+    "link": "https://joeywillman.github.io/unit-3/",
+    "image": "assets/CoordinatedClimate.png"
+  },
+  {
+    "slug": "daylight",
+    "title": "Length of Day in U.S. Counties",
+    "theme": "Cartography Challenge – Time & Space",
+    "description": "Map showing the variation in daylight duration across U.S. counties for the summer and winter solstices, calculated using Python and ArcGIS Pro.",
+    "image": "assets/TimeZones.png"
+  },
+  {
+    "slug": "firetowers",
+    "title": "Adirondack Fire Towers",
+    "theme": "#30DayMapChallenge – Points",
+    "description": "A map of historic fire towers in the Adirondack Park, symbolized by type and elevation, celebrating New York’s mountain fire tower legacy.",
+    "image": "assets/FireTower.png"
+  },
+  {
+    "slug": "greatrange",
+    "title": "Great Range Wilderness Map",
+    "theme": "Adirondack Atlas Series",
+    "description": "A detailed wilderness map highlighting trails, campsites, and peaks in the Great Range of the Adirondacks, part of a larger High Peaks series.",
+    "image": "assets/GreatRange.png"
+  },
+  {
+    "slug": "gwbnt",
+    "title": "Great Wisconsin Birding & Nature Trail",
+    "theme": "Interactive Conservation Map",
+    "description": "An interactive Leaflet map visualizing birding and nature sites across Wisconsin, adapted from the Great Wisconsin Birding & Nature Trail guide.",
+    "link": "https://joeywillman.github.io/GWBNT/",
+    "image": "assets/GWBNT.png"
+    
+  },
+  {
+    "slug": "interurbantrail",
+    "title": "Ozaukee Interurban Trail Birding Guide",
+    "theme": "Accessibility Mapping",
+    "description": "Interactive guide mapping hotspots and accessibility features along the 30-mile Ozaukee Interurban Trail through diverse habitats of Ozaukee County.",
+    "link": "https://joeywillman.github.io/ozaukee-interurbantrail-birding/",
+    "image": "assets/interurbantrailguide.png",
+    "featured": true
+  },
+  {
+    "slug": "adirondacksizecomp",
+    "title": "Adirondack Size Comparison",
+    "theme": "Adirondack Geography Visualization",
+    "description": "A simple map comparing the area of the Adirondack Park to the state of Vermont to visualize its vast scale.",
+    "image": "assets/AdriondacksVermontSizeComparisonMap.png"
+  },
+  {
+    "slug": "anwr",
+    "title": "ANWR at Risk: Oil Leases & Caribou Calving Grounds",
+    "theme": "#30DayMapChallenge – Arctic",
+    "description": "Map of the Arctic National Wildlife Refuge showing proposed oil-lease areas overlapping Porcupine caribou calving grounds, illustrating conservation trade-offs.",
+    "image": "assets/ANWR.png"
+  },
+  {
+    "slug": "numberedroads",
+    "title": "Numbered vs Unnumbered Roads in Wisconsin",
+    "theme": "#30DayMapChallenge – 2 Colors",
+    "description": "Binary map highlighting numbered and unnumbered road patterns across Wisconsin, exploring naming conventions and regional distribution.",
+    "image": "assets/numberedroads.png"
+  },
+  {
+    "slug": "penang",
+    "title": "Watercolor Map of Penang, Malaysia",
+    "theme": "Artistic Cartography",
+    "description": "A watercolor-style tribute map to Penang’s colorful architecture, inspired by John Nelson’s technique and created as a personalized art gift.",
+    "image": "assets/PenangWatercolor.png"
+  },
+  {
+    "slug": "russianoccupation",
+    "title": "Russian Occupation in Georgia",
+    "theme": "Political Geography Map",
+    "description": "Map illustrating Russian-occupied regions of Abkhazia and South Ossetia within Georgia, raising awareness of the continuing territorial conflict.",
+    "image": "assets/russian.png"
+  },
+  {
+    "slug": "storymap",
+    "title": "The Green Divide: Unequal Access to Green Space in Chicago",
+    "theme": "ArcGIS StoryMap",
+    "description": "Story map exploring inequitable distribution of green space in Chicago, combining historical redlining and park accessibility data.",
+    "iframe": "<iframe src='https://storymaps.arcgis.com/stories/73179359881c4d8fa8825fcdf4eaa865' style='width:100%;height:800px;border:none'></iframe>",
+    "image": "assets/StoryMap-thumbnail.png"
+  },
+  {
+    "slug": "tahawus",
+    "title": "Summiting Tahawus (Mt. Marcy)",
+    "theme": "Personal Expedition Map",
+    "description": "A hillshade-styled topographic map commemorating the 16-mile ascent of New York’s tallest peak, capturing the terrain and experience.",
+    "image": "assets/Tahawus.png"
+  },
+  {
+    "slug": "waba",
+    "title": "Wisconsin Accessible Birding Atlas",
+    "theme": "Interactive Accessibility Atlas",
+    "description": "Interactive atlas for accessible birding across Wisconsin, allowing filters by site accessibility and resources for inclusive outdoor recreation.",
+    "link": "https://joeywillman.github.io/WisconsinAccessibleBirdingAtlas/",
+    "image": "assets/WABA.png"
+  },
+  {
+    "slug": "wickerpark",
+    "title": "Vintage Wicker Park Map",
+    "theme": "Frederick Law Olmsted Style",
+    "description": "Vintage-styled map of Wicker Park in Chicago, inspired by Central Park planning maps and 19th-century aesthetics.",
+    "image": "assets/WickerPark.png"
+  },
+  {
+    "slug": "knobstone",
+    "title": "Knobstone Trail Thru-Hike",
+    "theme": "Monochrome Terrain Series",
+    "description": "Minimalist grayscale trail map of the Knobstone Trail thru-hike, incorporating dot grid reference and stylized hillshading.",
+    "image": "assets/knobstone.png"
+  },
+ {
+    "slug": "scrollmap",
+    "title": "Scroll Map of Known Lands",
+    "theme": "Medieval Thematic Map",
+    "description": "A scrolling, medieval-inspired map blending cartography and storytelling, styled with parchment textures and castle symbology.",
+    "iframe": "<iframe src='https://api.mapbox.com/styles/v1/joeywillman/cm2waofgy00eg01pd2aqw1l9x.html?title=view&access_token=pk.eyJ1Ijoiam9leXdpbGxtYW4iLCJhIjoiY20xdXhzdjBhMDY4YzJrcGZ4bWt4eWtveCJ9.8ag8kje2DHF_uKKoE8HzNA&zoomwheel=true&fresh=true#11.79/44.27622/-73.97176' style='width:100%;height:800px;border:none'></iframe>",
+    "image": "assets/ScrollMap-Thumbnail.png"
+  }
+]
