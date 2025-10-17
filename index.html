@@ -99,26 +99,61 @@
 
   <!-- Scripts -->
   <script src="lib/bootstrap.min.js"></script>
-  <script>
-    // Load featured projects (based on "featured": true)
-    fetch("data/projects.json")
-      .then((r) => r.json())
-      .then((projects) => {
-        const featured = projects.filter((p) => p.featured);
-        const grid = document.getElementById("featuredGrid");
-        grid.innerHTML = featured.map(p => `
-          <div class="featured-card">
-            <img src="${p.image}" alt="${p.title}">
-            <div class="featured-card-body">
-              <h4>${p.title}</h4>
-            </div>
-            <div class="featured-card-footer">
-              <a href="Project.html?p=${p.slug}">See Detail</a>
-            </div>
+ <script>
+  (function () {
+    const DATA_URL = 'data/projects.json';
+    const GRID_ID = 'featuredGrid';
+
+    const escapeHtml = (s = '') =>
+      s.replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+
+    const card = (p) => {
+      const href = `project.html?p=${encodeURIComponent(p.slug)}`; // ✅ lowercase
+      const img = p.image || 'assets/placeholder.png';
+      const title = escapeHtml(p.title || '');
+      return `
+        <a class="featured-card" href="${href}" aria-label="Open ${title}">
+          <img src="${img}" alt="${title}" loading="lazy"
+               onerror="this.onerror=null;this.src='assets/placeholder.png';">
+          <div class="featured-card-body">
+            <h4>${title}</h4>
           </div>
-        `).join("");
-      })
-      .catch(err => console.error("Error loading featured projects:", err));
-  </script>
+          <div class="featured-card-footer">
+            <span class="btn btn-primary">See Detail</span>
+          </div>
+        </a>
+      `;
+    };
+
+    async function init() {
+      const grid = document.getElementById(GRID_ID);
+      if (!grid) return;
+
+      try {
+        const r = await fetch(DATA_URL, { cache: 'no-cache' });
+        if (!r.ok) throw new Error(`Failed to load ${DATA_URL}: ${r.status}`);
+        const projects = await r.json();
+
+        // Prefer items explicitly marked featured; fallback to first 3
+        let featured = projects.filter(p => p.featured === true);
+        if (featured.length === 0) featured = projects.slice(0, 3);
+
+        // Optional: order (desc) then alpha
+        featured.sort((a, b) => (b.order ?? 0) - (a.order ?? 0) || String(a.title).localeCompare(String(b.title)));
+
+        grid.innerHTML = featured.map(card).join('');
+      } catch (err) {
+        console.error(err);
+        grid.innerHTML = `
+          <div class="alert alert-danger" role="alert">
+            Could not load featured projects. Please try again later.
+          </div>`;
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+  })();
+</script>
+
 </body>
 </html>
