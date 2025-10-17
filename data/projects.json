@@ -8,6 +8,22 @@
     "image": "assets/treasuresofoz.png",
     "featured": true
   },
+      {
+    "slug": "driftless",
+    "title": "Driftless Hillshade with Blender",
+    "theme": "Realistic Hillshade",
+    "description": "This is my first attempt at creating a realistic hillshade using Blender and GIS data. The Driftless Area in southwestern Wisconsin was chosen for its distinctive topography, which lacks glacial deposits and features deeply carved river valleys.",
+    "image": "assets/driftless.png"
+    
+  },
+      {
+    "slug": "driftlesscolored",
+    "title": "Driftless Hillshade with Blender (colored)",
+    "theme": "Realistic Hillshade",
+    "description": "This is my first attempt at coloring a realistic hillshade using Blender and GIS data. The Driftless Area in southwestern Wisconsin was chosen for its distinctive topography, which lacks glacial deposits and features deeply carved river valleys.",
+    "image": "assets/driftlesscolored.png"
+  
+  },
   {
     "slug": "mississippibluestrail",
     "title": "Mississippi Blues Trail",
