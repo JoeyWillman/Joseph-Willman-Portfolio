@@ -1,5 +1,12 @@
 [
     {
+    "slug": "treatyofparis",
+    "title": "Treaty of Paris",
+    "theme": "#30DayMapChallenge 2025 - Polygons",
+    "description": "This treaty formally recognized the independence of the United States and established its boundaries , stretching from the Atlantic Ocean to the Mississippi River, and from Canada to Spanish Florida. For today’s map, I explored historical boundary files of the United States and tried my best to replicate the style of maps from that era. I had a lot of fun experimenting with this design and seeing how the U.S. evolved over time.",
+    "image": "assets/treatyofparis.png"
+  },
+    {
     "slug": "treasuresofoz",
     "title": "Treasures of Oz",
     "theme": "Atlas of Natual Areas in Ozaukee County",
