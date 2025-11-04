@@ -1,7 +1,7 @@
 [
     {
     "slug": "picturedrocks",
-    "title": "pictured Rocks National Lakeshore Postcard",
+    "title": "Pictured Rocks National Lakeshore Postcard",
     "theme": "#30DayMapChallenge 2025 - My Data",
     "description": "For today's map, I ceated a post-card style collage from my trip to Pictured Rocks National Lakeshore with Nicole Mitchell. I wanted to experiment outside of ArcGIS Pro for this one. The trail lines are GPX files exported from Strava from our hikes and paddling routes. I then brought th emap into inkscape for further editing before finishing it in Canva, where I added the photos and text.",
     "image": "assets/picturedrocks.png"
