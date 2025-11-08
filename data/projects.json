@@ -1,5 +1,19 @@
 [
     {
+    "slug": "milwaukeesenateelection",
+    "title": "2016 Milwaukee US Senate Election Results",
+    "theme": "#30DayMapChallenge 2025 - Urban",
+    "description": "For today’s map, I explored the Milwaukee Open Data Portal to find an interesting dataset to visualize. One of the first things that caught my eye was the 2016 U.S. Senate race results by Milwaukee voting wards. With election mapping being such an important niche within cartography, I decided to take a crack at replicating a Vox-style election map using this local data. In 2010, Ron Johnson defeated three-term Democratic senator Russ Feingold by a margin of about 5 percentage points. In their 2016 rematch, Johnson once again won by roughly the same margin. By 2022, Johnson secured his third term by just one percentage point, and he currently remains in office. Despite this map showing Feingold’s overwhelming victory within the city of Milwaukee, he ultimately lost the statewide race.",
+    "image": "assets/mkesenateelection.jpg"
+  },
+    {
+    "slug": "bermudatriangle",
+    "title": "Bermuda Triangle - The Third Dimension",
+    "theme": "#30DayMapChallenge 2025 - Dimensions",
+    "description": "One of my favorite parts of this challenge is seeing the many creative directions people take with each theme. It’s always inspiring to scroll through the feed and see how differently everyone interprets the same prompt. For today’s theme: Dimensions, I decided to take that idea a bit literally. I present to you my map of the Bermuda Triangle, a place often referred to as a gateway to another dimension. It was fun to lean into the myth and mystery for this one and explore a theme that sits somewhere between geography and legend.",
+    "image": "assets/bermudatriangle.png"
+  },  
+  {
     "slug": "picturedrocks",
     "title": "Pictured Rocks National Lakeshore Postcard",
     "theme": "#30DayMapChallenge 2025 - My Data",
