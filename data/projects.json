@@ -1,5 +1,23 @@
 [
     {
+    "slug": "dolittleraid",
+    "title": "Map of the Doolittle Raid (1942)",
+    "theme": "#30DayMapChallenge 2025 - Air",
+    "description": "This map visualizes one of the most daring air missions in U.S. history — the Doolittle Raid. On April 18, 1942, sixteen B-25 bombers launched from the USS Hornet to strike Tokyo in retaliation for the attack on Pearl Harbor. The map traces the aircrafts’ route across the Pacific, illustrating the mission’s unprecedented range, the crews’ crash landings in China, and its symbolic importance as America’s first air operation to hit Japan’s mainland. The design combines historical cartography and storytelling to capture both the geography and the gravity of the mission.",
+    "image": "assets/dolittle.png"
+  },{
+    "slug": "minimalwisconsin",
+    "title": "Minimalist Map of Wisconsin",
+    "theme": "#30DayMapChallenge 2025 - Minimal",
+    "description": "This map was created for the #30DayMapChallenge theme “Minimal.” It features the Geo-Metro linework from Daniel P. Huffman’s Project Linework, a creative library of experimental vector geometries.",
+    "image": "assets/minimalWI.jpg"
+  },{
+    "slug": "2125eclipse",
+    "title": "Total Solar Eclipse 2125",
+    "theme": "#30DayMapChallenge 2025 - A map from 2125",
+    "description": "Created for the #30DayMapChallenge theme “A Map from 2125,” this piece visualizes the path of totality for the solar eclipse of October 26, 2125 using NASA’s eclipse prediction data.",
+    "image": "assets/2125.png"
+  },{
     "slug": "milwaukeesenateelection",
     "title": "2016 Milwaukee US Senate Election Results",
     "theme": "#30DayMapChallenge 2025 - Urban",
