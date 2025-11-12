@@ -16,7 +16,8 @@
     "title": "Total Solar Eclipse 2125",
     "theme": "#30DayMapChallenge 2025 - A map from 2125",
     "description": "Created for the #30DayMapChallenge theme “A Map from 2125,” this piece visualizes the path of totality for the solar eclipse of October 26, 2125 using NASA’s eclipse prediction data.",
-    "image": "assets/2125.png"
+    "image": "assets/2125.png",
+    "featured": true
   },{
     "slug": "milwaukeesenateelection",
     "title": "2016 Milwaukee US Senate Election Results",
@@ -76,8 +77,8 @@
     "theme": "Blues Trail Interactive Map",
     "description": "This interactive site was created by Joseph Willman, a freelance cartographer and GIS specialist, as an independent project inspired by the Mississippi Blues Trail. While not affiliated with the Mississippi Blues Commission, this project was developed to showcase both the historical and cultural importance of the trail.",
     "link": "https://joeywillman.github.io/MississipiBluesTrail/",
-    "image": "assets/bluestrail.png",
-    "featured": true
+    "image": "assets/bluestrail.png"
+  
   },
   {
     "slug": "birdingtour",
