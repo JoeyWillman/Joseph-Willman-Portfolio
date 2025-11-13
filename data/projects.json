@@ -1,5 +1,11 @@
 [
     {
+    "slug": "falloutmadison",
+    "title": "Fallout Style Pipboy map of Madison, WI",
+    "theme": "Video Game Style Map",
+    "description": "This is a map of State Street in Madison, WI, styled after the map in Fallout video games. The design mimics the retro-futuristic aesthetic of the Pipboy.",
+    "image": "assets/falloutstatest.png"
+  },{
     "slug": "dolittleraid",
     "title": "Map of the Doolittle Raid (1942)",
     "theme": "#30DayMapChallenge 2025 - Air",
