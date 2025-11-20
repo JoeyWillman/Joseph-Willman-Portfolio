@@ -1,10 +1,29 @@
-[
+[{
+    "slug": "edmundfitzgerald",
+    "title": "The Wreck of the Edmund Fitzgerald Storymap",
+    "theme": "ArcGIS StoryMap",
+    "description": "This storymap tells the story of the fitz, the largest ship to sail the Great Lakes, which sank in a storm on November 10, 1975, taking all 29 crew members with her. The storymap combines historical photos, maps, and narrative text to illustrate the events leading up to the sinking, the search and recovery efforts, and the legacy of the shipwreck.",
+    "iframe": "<iframe src='https://arcg.is/quLHH0' style='width:100%;height:800px;border:none'></iframe>",
+    "image": "assets/fitzgerald.png"
+  },{
+    "slug": "fujimap",
+    "title": "Mt. Fuji Postcard",
+    "theme": "Trippy Terrain Visualization",
+    "description": "A trippy visualization of Mt. Fuji, using a tutorial by John Nelson.",
+    "image": "assets/fujipostcard.png"
+  },{
+    "slug": "midwest",
+    "title": "Is Your State in the Midwest?",
+    "theme": "#30DayMapChallenge 2025 - 10 Minute Map",
+    "description": "A quick map created in 10 minutes for the #30DayMapChallenge theme “10 Minute Map.” This map visualizes which U.S. states I considered part of the Midwest region, based on my interpretations and with a running clock. If I could go back and make changes, Nebraska would be included.",
+    "image": "assets/isyourstatemidwest.png"
+  },
     {
-    "slug": "falloutmadison",
-    "title": "Fallout Style Pipboy map of Madison, WI",
-    "theme": "Video Game Style Map",
-    "description": "This is a map of State Street in Madison, WI, styled after the map in Fallout video games. The design mimics the retro-futuristic aesthetic of the Pipboy.",
-    "image": "assets/falloutstatest.png"
+    "slug": "beeconomy",
+    "title": "The Beeconomy",
+    "theme": "30DayMapchallenge 2025 - Cell",
+    "description": "This map shows where honey bee colonies are located in the United States, based on data from the USDA.",
+    "image": "assets/beeconomy.png"
   },{
     "slug": "dolittleraid",
     "title": "Map of the Doolittle Raid (1942)",
@@ -126,8 +145,8 @@
   {
     "slug": "greatrange",
     "title": "Great Range Wilderness Map",
-    "theme": "Adirondack Atlas Series",
-    "description": "A detailed wilderness map highlighting trails, campsites, and peaks in the Great Range of the Adirondacks, part of a larger High Peaks series.",
+    "theme": "Trippy Terrain Visualization",
+    "description": "A trippy visualization of the Great Range Wilderness in the Adirondack Park, using a tutorial by John Nelson.",
     "image": "assets/GreatRange.png"
   },
   {
