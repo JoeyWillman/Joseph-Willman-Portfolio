@@ -1,101 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Cartography and GIS projects by Joseph Willman." />
   <title>Maps | Joseph Willman</title>
 
-  <!-- Bootstrap & Styles -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/0b26d5bb90.js" crossorigin="anonymous"></script>
-
-  <style>
- 
-
-    /* === Card Grid === */
-    #projectGrid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
-    }
-
-    .map-card {
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-
-    .map-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
-    }
-
-    .map-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .map-card-body {
-      flex-grow: 1;
-      padding: 1.25rem;
-      text-align: center;
-    }
-
-    .map-card-body h5 {
-      font-family: 'Playfair Display', serif;
-      font-weight: 600;
-      font-size: 1.15rem;
-      margin-bottom: 0.5rem;
-      color: #000;
-    }
-
-    .map-card-body p {
-      font-size: 0.9rem;
-      color: #444;
-      margin-bottom: 1rem;
-    }
-
-    .map-card-footer {
-      text-align: center;
-      padding: 0.75rem 1rem 1.25rem;
-    }
-
-    .map-card-footer a {
-      background-color: #002D62;
-      color: white;
-      font-weight: 500;
-      border-radius: 5px;
-      padding: 0.5rem 1.5rem;
-      text-decoration: none;
-      display: inline-block;
-      transition: background-color 0.2s ease;
-    }
-
-    .map-card-footer a:hover {
-      background-color: #01499b;
-    }
-
-    footer p, footer img {
-      margin: 0 auto;
-      display: block;
-    }
-  </style>
 </head>
-
 <body>
+
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-default">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
-        <img src="assets/logo.png" alt="Logo" class="navbar-logo"> Joseph Willman
+        <img src="assets/logo.png" alt="Logo" class="navbar-logo" /> Joseph Willman
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -111,37 +36,35 @@
     </div>
   </nav>
 
-  <!-- Hero Banner -->
+  <!-- Hero -->
   <div class="jumbotron">
-    <h1>Maps & Cartography Projects</h1>
+    <h1>Maps &amp; Cartography</h1>
+    <p>A portfolio of GIS, interactive, and print cartography projects</p>
   </div>
 
-  <!-- Dynamic Cards Grid -->
-  <div class="container pb-5">
-    <div id="projectGrid"></div>
+  <!-- Grid -->
+  <div class="container py-section">
+    <div id="projectGrid" class="card-grid">
+      <p class="text-muted">Loading projects…</p>
+    </div>
   </div>
 
   <!-- Footer -->
-  <footer class="footer mt-5">
-    <div class="container text-center">
-      <ul class="list-inline social-buttons mb-2">
-        <li class="list-inline-item"><a href="mailto:jgwillman@wisc.edu" target="_blank"><i class="fa fa-envelope"></i></a></li>
-        <li class="list-inline-item"><a href="https://github.com/JoeyWillman" target="_blank"><i class="fab fa-github"></i></a></li>
-        <li class="list-inline-item"><a href="https://x.com/WillmanCarto" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
-        <li class="list-inline-item"><a href="https://www.linkedin.com/in/joseph-willman-56696a206/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-        <li class="list-inline-item"><a href="https://www.instagram.com/joeywillman/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer-social">
+        <li><a href="mailto:jgwillman@wisc.edu" aria-label="Email"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="https://github.com/JoeyWillman" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://x.com/WillmanCarto" target="_blank" rel="noopener" aria-label="X / Twitter"><i class="fab fa-x-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/joseph-willman-56696a206/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.instagram.com/joeywillman/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
       </ul>
-
-      <p class="text-muted" style="margin-top:0px">
-        Cover photo by Nancie Battaglia, courtesy of Adirondack Land Trust
-        <span class="line-break"></span>
-      </p>
-      <p class="text-muted mb-1">Copyright © 2024 Joseph Willman. All rights reserved.</p>
-      <img src="assets/logo.png" alt="logo" height="75px">
+      <p>Cover photo by Nancie Battaglia, courtesy of Adirondack Land Trust</p>
+      <p>Copyright &copy; 2025 Joseph Willman. All rights reserved.</p>
+      <img src="assets/logo.png" alt="Logo" />
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="lib/bootstrap.min.js"></script>
   <script src="js/maps.js" defer></script>
 </body>

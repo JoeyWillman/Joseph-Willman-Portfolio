@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Project | Joseph Willman</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/0b26d5bb90.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-default">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
-        <img src="assets/logo.png" alt="Logo" class="navbar-logo"> Joseph Willman
+        <img src="assets/logo.png" alt="Logo" class="navbar-logo" /> Joseph Willman
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -31,14 +35,24 @@
     </div>
   </nav>
 
-  <div class="container py-5">
-    <div id="projectContainer"></div>
+  <div class="container py-section">
+    <div id="projectContainer">
+      <p class="text-muted">Loading project…</p>
+    </div>
   </div>
 
+  <!-- Footer -->
   <footer class="footer mt-5">
     <div class="container">
-      <p class="text-muted">Copyright © 2024 Joseph Willman. All rights reserved.</p>
-      <img src="assets/logo.png" alt="logo" height="75px">
+      <ul class="footer-social">
+        <li><a href="mailto:jgwillman@wisc.edu" aria-label="Email"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="https://github.com/JoeyWillman" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://x.com/WillmanCarto" target="_blank" rel="noopener" aria-label="X / Twitter"><i class="fab fa-x-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/joseph-willman-56696a206/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.instagram.com/joeywillman/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+      <p>Copyright &copy; 2025 Joseph Willman. All rights reserved.</p>
+      <img src="assets/logo.png" alt="Logo" />
     </div>
   </footer>
 

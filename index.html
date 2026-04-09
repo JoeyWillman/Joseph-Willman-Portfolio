@@ -1,37 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="keywords" content="maps, cartography, GIS, Joseph Willman, map design" />
-  <title>Joseph Willman</title>
+  <meta name="description" content="Portfolio of Joseph Willman — cartographer, GIS specialist, and conservationist." />
+  <meta name="keywords" content="cartography, GIS, maps, Joseph Willman, portfolio" />
+  <title>Joseph Willman | Cartographer & GIS Specialist</title>
 
-  <!-- Bootstrap & Styles -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/0b26d5bb90.js" crossorigin="anonymous"></script>
-
- 
 </head>
-
 <body>
+
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-default">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
         <img src="assets/logo.png" alt="Logo" class="navbar-logo" /> Joseph Willman
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="Maps.html">Maps</a></li>
           <li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
@@ -45,8 +39,9 @@
 
   <!-- Hero -->
   <div class="jumbotron">
-    <h1>Joseph Willman</h1>
     <img src="assets/logo.png" alt="Logo" class="jumbotron-logo" />
+    <h1>Joseph Willman</h1>
+    <p>Cartographer &amp; GIS Specialist</p>
   </div>
 
   <!-- CTA Buttons -->
@@ -57,103 +52,96 @@
     <a href="photos.html" class="btn btn-primary">
       <i class="fas fa-camera"></i> View Photos
     </a>
+    <a href="contact.html" class="btn btn-outline">
+      <i class="fas fa-envelope"></i> Get in Touch
+    </a>
   </div>
 
   <!-- Featured Projects -->
-  <section class="featured-section">
-    <div class="container">
-      <h3 class="featured-title">Featured Projects</h3>
-      <div id="featuredGrid"></div>
+  <section class="section section-alt">
+    <div class="container py-section">
+      <h2 class="section-title">Featured Projects</h2>
+      <div id="featuredGrid">
+        <p class="text-muted text-center">Loading projects…</p>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section class="contact-section">
     <h4>Contact Me</h4>
-    <p class="text-muted mb-4"><i>Feedback and inquiries are greatly appreciated!</i></p>
-    <form action="https://formspree.io/f/xjkvlkpb" method="POST">
-      <div class="mb-3">
-        <input type="text" name="name" class="form-control mb-3" placeholder="Name" required />
-        <input type="email" name="email" class="form-control mb-3" placeholder="Email" required />
-        <textarea name="message" class="form-control mb-3" rows="6" placeholder="Message" required></textarea>
-        <button type="submit" class="btn btn-dark w-100">Send</button>
-      </div>
-    </form>
+    <p class="text-muted"><em>Feedback and inquiries are greatly appreciated!</em></p>
+    <div class="contact-form">
+      <form action="https://formspree.io/f/xjkvlkpb" method="POST">
+        <div class="form-row">
+          <input type="text" name="name" class="form-control" placeholder="Name" required />
+          <input type="email" name="email" class="form-control" placeholder="Email" required />
+        </div>
+        <textarea name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
+        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <ul class="list-inline social-buttons mb-3">
-        <li class="list-inline-item"><a href="mailto:jgwillman@wisc.edu" target="_blank"><i class="fa fa-envelope"></i></a></li>
-        <li class="list-inline-item"><a href="https://github.com/JoeyWillman" target="_blank"><i class="fab fa-github"></i></a></li>
-        <li class="list-inline-item"><a href="https://x.com/WillmanCarto" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
-        <li class="list-inline-item"><a href="https://www.linkedin.com/in/joseph-willman-56696a206/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-        <li class="list-inline-item"><a href="https://www.instagram.com/joeywillman/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <ul class="footer-social">
+        <li><a href="mailto:jgwillman@wisc.edu" aria-label="Email"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="https://github.com/JoeyWillman" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://x.com/WillmanCarto" target="_blank" rel="noopener" aria-label="X / Twitter"><i class="fab fa-x-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/joseph-willman-56696a206/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.instagram.com/joeywillman/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
       </ul>
       <p>Cover photo by Nancie Battaglia, courtesy of Adirondack Land Trust</p>
-      <p>Copyright © 2024 Joseph Willman. All rights reserved.</p>
-      <img src="assets/logo.png" alt="logo" />
+      <p>Copyright &copy; 2025 Joseph Willman. All rights reserved.</p>
+      <img src="assets/logo.png" alt="Logo" />
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="lib/bootstrap.min.js"></script>
- <script>
-  (function () {
-    const DATA_URL = 'data/projects.json';
-    const GRID_ID = 'featuredGrid';
+  <script>
+    (function () {
+      const DATA_URL = 'data/projects.json';
 
-    const escapeHtml = (s = '') =>
-      s.replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-
-    const card = (p) => {
-      const href = `project.html?p=${encodeURIComponent(p.slug)}`; // ✅ lowercase
-      const img = p.image || 'assets/placeholder.png';
-      const title = escapeHtml(p.title || '');
-      return `
-        <a class="featured-card" href="${href}" aria-label="Open ${title}">
-          <img src="${img}" alt="${title}" loading="lazy"
-               onerror="this.onerror=null;this.src='assets/placeholder.png';">
-          <div class="featured-card-body">
-            <h4>${title}</h4>
-          </div>
-          <div class="featured-card-footer">
-            <span class="btn btn-primary">See Detail</span>
-          </div>
-        </a>
-      `;
-    };
-
-    async function init() {
-      const grid = document.getElementById(GRID_ID);
-      if (!grid) return;
-
-      try {
-        const r = await fetch(DATA_URL, { cache: 'no-cache' });
-        if (!r.ok) throw new Error(`Failed to load ${DATA_URL}: ${r.status}`);
-        const projects = await r.json();
-
-        // Prefer items explicitly marked featured; fallback to first 3
-        let featured = projects.filter(p => p.featured === true);
-        if (featured.length === 0) featured = projects.slice(0, 3);
-
-        // Optional: order (desc) then alpha
-        featured.sort((a, b) => (b.order ?? 0) - (a.order ?? 0) || String(a.title).localeCompare(String(b.title)));
-
-        grid.innerHTML = featured.map(card).join('');
-      } catch (err) {
-        console.error(err);
-        grid.innerHTML = `
-          <div class="alert alert-danger" role="alert">
-            Could not load featured projects. Please try again later.
-          </div>`;
+      function escapeHtml(s = '') {
+        return s.replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
       }
-    }
 
-    document.addEventListener('DOMContentLoaded', init);
-  })();
-</script>
+      function card(p) {
+        const href = `project.html?p=${encodeURIComponent(p.slug)}`;
+        const img  = p.image || 'assets/placeholder.png';
+        const title = escapeHtml(p.title || '');
+        return `
+          <a class="featured-card" href="${href}" aria-label="${title}">
+            <img src="${img}" alt="${title}" loading="lazy"
+                 onerror="this.onerror=null;this.src='assets/placeholder.png';">
+            <div class="featured-card-body"><h4>${title}</h4></div>
+            <div class="featured-card-footer">
+              <span class="btn btn-primary">See Detail</span>
+            </div>
+          </a>`;
+      }
 
+      async function init() {
+        const grid = document.getElementById('featuredGrid');
+        if (!grid) return;
+        try {
+          const r = await fetch(DATA_URL, { cache: 'no-cache' });
+          if (!r.ok) throw new Error(r.status);
+          const projects = await r.json();
+          let featured = projects.filter(p => p.featured === true);
+          if (!featured.length) featured = projects.slice(0, 3);
+          featured.sort((a, b) => (b.order ?? 0) - (a.order ?? 0) || String(a.title).localeCompare(String(b.title)));
+          grid.innerHTML = featured.map(card).join('');
+        } catch (err) {
+          console.error(err);
+          grid.innerHTML = '<p class="text-muted text-center">Could not load featured projects.</p>';
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', init);
+    })();
+  </script>
 </body>
 </html>

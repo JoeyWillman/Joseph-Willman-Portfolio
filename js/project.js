@@ -1,36 +1,29 @@
 /* js/project.js
  * Renders a single project on project.html?p=<slug>
- * - Shows title, theme, description, "View Project" (if link), and either iframe or image
- * - Updates <title> dynamically
- * - Graceful not-found state with a backlink
+ * To update project content: edit data/projects.json only.
  */
-
 (function () {
-  const DATA_URL = 'data/projects.json';
+  const DATA_URL     = 'data/projects.json';
   const CONTAINER_ID = 'projectContainer';
-
-  const $ = (sel, root = document) => root.querySelector(sel);
 
   function escapeHtml(str = '') {
     return str.replace(/[&<>"']/g, m => (
-      { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[m]
+      {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]
     ));
   }
 
   function getSlug() {
-    const params = new URLSearchParams(location.search);
-    return params.get('p') || '';
+    return new URLSearchParams(location.search).get('p') || '';
   }
 
-  function projectNotFound(slug) {
+  function showNotFound(slug) {
     const el = document.getElementById(CONTAINER_ID);
     if (!el) return;
     el.innerHTML = `
       <div class="alert alert-warning" role="alert">
-        Project “${escapeHtml(slug || '(none)')}” not found.
-        <a href="Maps.html" class="alert-link">Back to all maps</a>.
-      </div>
-    `;
+        Project <strong>${escapeHtml(slug || '(none)')}</strong> was not found.
+        <a href="Maps.html" class="alert-link ms-2">← Back to all maps</a>
+      </div>`;
     document.title = 'Project Not Found | Joseph Willman';
   }
 
@@ -38,46 +31,47 @@
     const el = document.getElementById(CONTAINER_ID);
     if (!el) return;
 
-    const themeLine = p.theme ? `<p class="text-muted mb-2">${escapeHtml(p.theme)}</p>` : '';
+    const theme       = p.theme       ? `<p class="text-muted mb-3">${escapeHtml(p.theme)}</p>` : '';
     const description = p.description ? `<p class="portfolio-description">${escapeHtml(p.description)}</p>` : '';
-    const liveBtn = p.link ? `<a href="${p.link}" target="_blank" rel="noopener" class="btn btn-primary me-2">View Project</a>` : '';
-
-    // Prefer iframe embed if provided, else show image
+    const liveBtn     = p.link
+      ? `<a href="${escapeHtml(p.link)}" target="_blank" rel="noopener" class="btn btn-primary">
+           <i class="fas fa-external-link-alt"></i> View Project
+         </a>`
+      : '';
     const media = p.iframe
       ? p.iframe
-      : `<img src="${p.image}" alt="${escapeHtml(p.title)}" class="img-fluid rounded shadow-sm" loading="lazy" onerror="this.onerror=null;this.src='assets/placeholder.png';">`;
+      : `<img src="${escapeHtml(p.image || 'assets/placeholder.png')}" alt="${escapeHtml(p.title)}"
+             class="img-fluid rounded" loading="lazy"
+             onerror="this.onerror=null;this.src='assets/placeholder.png';" style="box-shadow:0 4px 20px rgba(0,0,0,.12);">`;
 
     el.innerHTML = `
-      <h2 class="portfolio-title mb-2">${escapeHtml(p.title)}</h2>
-      ${themeLine}
+      <h2 class="portfolio-title">${escapeHtml(p.title)}</h2>
+      ${theme}
       ${description}
-      <div class="mb-3">
+      <div class="d-flex flex-wrap gap-2 mb-4">
         ${liveBtn}
-        <a href="Maps.html" class="btn btn-outline-secondary"><i class="fa fa-arrow-left"></i> Back to Maps</a>
+        <a href="Maps.html" class="btn btn-outline-secondary">
+          <i class="fas fa-arrow-left"></i> Back to Maps
+        </a>
       </div>
-      <div class="mt-3">${media}</div>
-    `;
+      <div>${media}</div>`;
 
-    // Update document title
     document.title = `${p.title} | Joseph Willman`;
   }
 
   async function init() {
     const slug = getSlug().trim();
-    if (!slug) return projectNotFound(slug);
-
+    if (!slug) return showNotFound(slug);
     try {
-      const res = await fetch(DATA_URL, { cache: 'no-cache' });
-      if (!res.ok) throw new Error(`Failed to load ${DATA_URL}: ${res.status}`);
+      const res  = await fetch(DATA_URL, { cache: 'no-cache' });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
-
       const project = Array.isArray(data) ? data.find(p => p.slug === slug) : null;
-      if (!project) return projectNotFound(slug);
-
+      if (!project) return showNotFound(slug);
       renderProject(project);
     } catch (err) {
       console.error(err);
-      projectNotFound(slug);
+      showNotFound(slug);
     }
   }
 
