@@ -226,6 +226,14 @@
     "image": "assets/WABA.png"
   },
   {
+    "slug": "KASwheretobird",
+    "title": "Kitsap Audubon Society - Where to Bird Interactive Map",
+    "theme": "Interactive Birding Atlas",
+    "description": "Interactive atlas of Birding Hotspots around Kitsap County, Washington, created for the Kitsap Audubon Society website.",
+    "link": "https://joeywillman.github.io/KAS-where-to-bird/",
+    "image": "assets/kaswheretobird.png"
+  },
+  {
     "slug": "wickerpark",
     "title": "Vintage Wicker Park Map",
     "theme": "Frederick Law Olmsted Style",
